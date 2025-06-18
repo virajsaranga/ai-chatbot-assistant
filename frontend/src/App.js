@@ -5,6 +5,8 @@ const App = () => {
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState('');
 
+  // Function to send a message to the backend and update the chat
+  // with the response from the AI model
   const sendMessage = async () => {
     if (!input.trim()) return;
 
