@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from 'react';
 
-// ChatBox component to display messages in a chat-like interface
 const ChatBox = ({ messages }) => {
   const chatRef = useRef(null);
 
@@ -20,5 +19,3 @@ const ChatBox = ({ messages }) => {
 };
 
 export default ChatBox;
-
-
