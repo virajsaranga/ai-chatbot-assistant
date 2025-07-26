@@ -8,6 +8,8 @@ const App = () => {
   const sendMessage = async () => {
     if (!input.trim()) return;
 
+
+    //messegs const
     const newMessages = [...messages, { sender: 'user', text: input }];
     setMessages(newMessages);
     setInput('');
