@@ -50,7 +50,7 @@ router.post('/', async (req, res) => {
     const result = await model.generateContent({ contents: messages });
     const reply = result.response.text();
 
-    // Save latest interaction to memory
+
     conversationHistory.push({ sender: 'user', text: message });
     conversationHistory.push({ sender: 'bot', text: reply });
 
